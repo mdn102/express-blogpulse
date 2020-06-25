@@ -9,3 +9,18 @@
 <hr />
 
 <a href="/">&larr; Back Home</a>
+<br/><br/>
+<h2> Comment:</h2>
+<br><br>
+<form method="POST" action="/articles/<%= article.id%>/comments">
+  <label for="title">Name</label><br />
+  <input class="title" id="title" type="text" name="name">
+  <br><br>
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea type="text" class="form-control" id="content" name="content" required></textarea>
+  </div>
+
+  <input type="submit" class="btn btn-primary">
+</form>
+

@@ -54,8 +54,8 @@ router.post('/:id/comments', (req, res) => {
     content: req.body.content,
     articleId: req.params.id
   }).then(comment => {
-    // console.log(comment)
-      return res.redirect(`/articles/${req.params.id}`)
+    console.log(comment)
+      res.redirect(`/articles/${req.params.id}`)
     }). catch ((error) => {
       console.log(error)
     })
